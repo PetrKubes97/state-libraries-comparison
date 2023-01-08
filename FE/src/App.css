@@ -1,0 +1,32 @@
+div {
+  display: flex;
+}
+
+#root {
+  justify-content: center;
+}
+
+.todoRow {
+  justify-content: space-between;
+  padding: 16px;
+  background: #f3f3f3;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+
+.todoRow:hover {
+  background: #bebebe;
+}
+
+.loading {
+  animation: loading 1.2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
